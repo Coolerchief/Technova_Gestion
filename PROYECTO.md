@@ -5,15 +5,15 @@
   <img src="assets/img/Hospital_santa_vida.png" alt="Hospital Santa Vida" width="150"/>
 </p>
 
-# 🏥 Sistema de Gestion de Tareas TechNova
+# 🖥️⚙️ Sistema de Gestion de Tareas TechNova
 
 **Proyecto académico** para la materia de **Estructuras de Datos** - Sistema de gestión de triage para áreas de urgencias implementado en Java.
 
-> 🚧 **Estado:** En Desarrollo - Documentación y diseño en proceso, implementación del codigo por finalizar 
+> 🚧🛠️ **Estado:** En Desarrollo - Documentación y diseño en proceso, implementación del codigo por finalizar 
 
 ---
 
-## 📋 INFORMACIÓN DEL PROYECTO
+## 🧾 INFORMACIÓN DEL PROYECTO
 
 ### Datos Académicos
 - **Universidad**: TecMilenio
@@ -40,53 +40,54 @@
 
 ---
 
-## 📋 Descripción del Caso
+## 🔍📝 Descripción del Caso
 
 ### Objetivo General del Proyecto
 En TechNova, el equipo de Soporte Técnico notó que constantemente se generaba caos durante los turnos: mientras algunos técnicos atendían tickets urgentes de clientes con problemas críticos, otras solicitudes importantes quedaban olvidadas o se realizaban en desorden. Por ejemplo, un cliente podía reportar que su servidor estaba caído, pero al mismo tiempo llegaban varias solicitudes de mantenimiento que, aunque menos urgentes, también necesitaban seguimiento.
 Además, los departamentos de Administración y Marketing enfrentaban dificultades similares: los reportes financieros se retrasaban porque los responsables estaban ocupados con tareas imprevistas, y las campañas publicitarias a veces no se ejecutaban a tiempo por falta de organización. Esto generaba ineficiencia, estrés en el personal y retrasos en la atención a clientes.
 
-### Funcionalidades Planificadas
-- ✅ **Análisis y diseño** del sistema completado
-- 🔄 **Registro de pacientes** - En desarrollo
-- 🔄 **Evaluación de síntomas** y asignación automática de nivel de triage
-- 🔄 **Cola de prioridad** inteligente basada en urgencia médica
-- 🔄 **Seguimiento del proceso** de atención
-- 🔄 **Persistencia de datos** con base de datos PostgreSQL/Supabase
 
-### Alcance del Sistema
-**Incluye:**
-- Registro y clasificación de pacientes
-- Sistema de colas de prioridad médica
-- Base de datos para persistencia
-- Reportes básicos de atención
+### 📩 Solicitudes del cliente para el programa
+- ✅(COMPLETADO) - Persistencia de Datos: Implementar un sistema de almacenamiento para guardar las tareas y que no se pierdan al cerrar el programa.
+- ✅(COMPLETADO) - Interfaz Gráfica (GUI): Desarrollar una interfaz gráfica para mejorar la experiencia del usuario, permitiendo una mejor interacción.
+- ⏳(EN PROCESO) - Notificaciones y Recordatorios: Añadir la funcionalidad de notificaciones o recordatorios para tareas urgentes.
+- ✅(COMPLETADO) - Mejorar la Gestión de Usuarios: Agregar un sistema para asignar tareas a diferentes usuarios o equipos dentro de los departamentos.
 
-**No incluye:**
-- Historiales médicos completos
-- Integración con equipos médicos
-- Sistema de facturación
+
+### 📈 Alcance del programa
+**Funciones:**
+-Registro y clasificación de tareas.
+-Asignación de tareas a usuarios y departamentos.
+-Control de estados (pendiente, en proceso, completada).
+-Reportes básicos de productividad.
+
+
+**Limitaciones:**
+(POR ESTABLECER)
 
 ---
 
-## 🎯 Sistema de Niveles de Triage
+## 📊 Sistema de clasificación de Tareas por Prioridad
 
-| Nivel | Color | Descripción | Tiempo Máximo de Espera |
+| Color | Tipo de tarea | Descripción | Tiempos Requeridos
 |-------|-------|-------------|--------------------------|
-| 🔴 **Rojo** | Emergencia | Riesgo vital inmediato | 0 minutos |
-| 🟠 **Naranja** | Muy Urgente | Riesgo vital potencial | 10 minutos |
-| 🟡 **Amarillo** | Urgente | Requiere atención pronta | 60 minutos |
-| 🟢 **Verde** | Menos Urgente | Puede esperar | 120 minutos |
-| 🔵 **Azul** | No Urgente | Consulta general | 240 minutos |
+| 🔴 **Rojo** | Urgente | Tareas que requieren un enfoque total | Inmediata |
+| 🟢 **Verde** | Colaborativa | Proyectos/Campañas de la empresa | Plazos especificados |
+| 🔵 **Azul** | Regular | Tareas diarias y ocasionales | Programable |
 
 ---
 
-## 🛠️ Tecnologías Seleccionadas
+## 🛠️ Tecnologías usadas en el proyecto
 
-- **Java 17+** - Lenguaje principal de desarrollo
+- **Java** - Lenguaje principal de desarrollo
 - **JDBC** - Conectividad con base de datos
 - **PostgreSQL/Supabase** - Sistema de gestión de base de datos
-- **Estructuras de Datos**: Colas de prioridad, HashMap, LinkedList
-- **Patrones de Diseño**: MVC, DAO, Factory
+- **Estructuras de Datos**:
+-   -LinkedList -> Implementa una cola para gestionar tareas en orden primero en entrar, primero en salir.
+    -ArrayList -> Ayuda a generar una lista dinámica para almacenar y gestionar las tareas
+- **Patrones de Diseño**:
+-   -MVC -> Separa la lógica de negocio, interfaz de usuario y control de flujo.
+    -DAO -> Abstrae el acceso a datos, facilitando operaciones CRUD con la base de datos.
 
 ---
 
