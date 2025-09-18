@@ -1,8 +1,8 @@
 
 <p align="center">
-  <img src="assets/img/Logo_tecmi.webp" alt="TecMilenio" width="150"/>
+  <img src="assets/img/tecmilenio_logo.png" alt="TecMilenio" width="150"/>
   &nbsp;&nbsp;&nbsp;
-  <img src="assets/img/Hospital_santa_vida.png" alt="Hospital Santa Vida" width="150"/>
+  <img src="assets/img/Technova_logo.png" alt="TechNova" width="150"/>
 </p>
 
 # 🖥️⚙️ Sistema de Gestion de Tareas TechNova
@@ -472,51 +472,33 @@ Secretaría de Salud de México. (2022). *Norma Oficial Mexicana NOM-027-SSA3-20
 ---
 
 ## 👨‍💻 Desarrolladores  
-
 <table>
   <tr>
     <td width="160" align="center">
-      <img src="assets/img/Foto_Erick.jpg" alt="Foto Erick" width="120" height="120" style="border-radius:50%;">
+      <img src="assets/img/Andres.png" alt="Andres" width="120" height="120" style="border-radius:50%;">
     </td>
-    <td>
-      <b>Erick Mauricio Santiago Díaz</b><br>
-      - GitHub: <a href="https://github.com/Erick-MSD">@Erick-MSD</a><br>
-      - Rol: Líder del Proyecto / Desarrollador Principal
+    <td width="160" align="center">
+      <img src="assets/img/Samu.png" alt="Samu" width="120" height="120" style="border-radius:50%;">
+    </td>
+    <td width="160" align="center">
+      <img src="assets/img/Pablo.png" alt="Pablo" width="120" height="120" style="border-radius:50%;">
+    </td>
+    <td width="160" align="center">
+      <img src="assets/img/Papulince.png" alt="Papulince" width="120" height="120" style="border-radius:50%;">
     </td>
   </tr>
   <tr>
-    <td width="160" align="center">
-      <img src="assets/img/Foto_Rojo.jpg" alt="Foto Rojo" width="120" height="120" style="border-radius:50%;">
-    </td>
-    <td>
-      <b>Santiago Sebastian Rojo Marquez</b><br>
-      - GitHub: <a href="https://github.com/Sanlaan">Sanlann</a><br>
-      - Rol: Desarrollador / Especialista en Base de Datos
-    </td>
-  </tr>
-  <tr>
-    <td width="160" align="center">
-      <img src="assets/img/Foto_Dani.jpg" alt="Foto Dani" width="120" height="120" style="border-radius:50%;">
-    </td>
-    <td>
-      <b>Daniel Isai Sanchez Guadarrama</b><br>
-      - GitHub: <a href="https://github.com/DanielIsaiSG">DanielIsaiSG</a><br>
-      - Rol: Arquitecto del Sistema / Desarrollador
-    </td>
-  </tr>
-  <tr>
-    <td width="160" align="center">
-      <img src="assets/img/Foto_Josue.jpg" alt="Foto Josue" width="120" height="120" style="border-radius:50%;">
-    </td>
-    <td>
-      <b>Josue David Murillo Gomez</b><br>
-      - GitHub: <a href="https://github.com/Josuemgd15">Josuemgd15</a><br>
-      - Rol: Encargado de la Documentación / Desarrollador
-    </td>
+    <td align="center"><b>Andres</b></td>
+    <td align="center"><b>Samu</b></td>
+    <td align="center"><b>Pablo</b></td>
+    <td align="center"><b>Papulince</b></td>
   </tr>
 </table>
 
-<p align="center"> <img src="assets/img/Evidencia.jpg" alt="Foto Evidencia" width="300" height="300" style="border-radius:50%;"> </p>
+<p align="center">
+  <img src="assets/img/Evidencia.jpg" alt="Foto Evidencia" width="300" height="300" style="border-radius:50%;">
+</p>
+
 
 
 ## 🔚 Conclusiones y Agradecimientos
