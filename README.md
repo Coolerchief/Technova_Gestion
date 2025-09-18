@@ -476,13 +476,13 @@ Secretaría de Salud de México. (2022). *Norma Oficial Mexicana NOM-027-SSA3-20
 <table>
   <tr>
     <td width="160" align="center">
-      <img src="assets/img/Andres.png" alt="Andres" width="120" height="120">
+      <img src="assets/img/Andres.jpg" alt="Andres" width="120" height="120">
     </td>
     <td width="160" align="center">
       <img src="assets/img/Samu.png" alt="Samu" width="120" height="120">
     </td>
     <td width="160" align="center">
-      <img src="assets/img/Pablo.png" alt="Pablo" width="120" height="120">
+      <img src="assets/img/Pablo.jpg" alt="Pablo" width="120" height="120">
     </td>
     <td width="160" align="center">
       <img src="assets/img/Papulince.png" alt="Papulince" width="120" height="120">
