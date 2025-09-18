@@ -42,7 +42,7 @@
 
 ## 🔍📝 Descripción del Caso
 
-### Objetivo General del Proyecto
+### Estudio de caso
 En TechNova, el equipo de Soporte Técnico notó que constantemente se generaba caos durante los turnos: mientras algunos técnicos atendían tickets urgentes de clientes con problemas críticos, otras solicitudes importantes quedaban olvidadas o se realizaban en desorden. Por ejemplo, un cliente podía reportar que su servidor estaba caído, pero al mismo tiempo llegaban varias solicitudes de mantenimiento que, aunque menos urgentes, también necesitaban seguimiento.
 Además, los departamentos de Administración y Marketing enfrentaban dificultades similares: los reportes financieros se retrasaban porque los responsables estaban ocupados con tareas imprevistas, y las campañas publicitarias a veces no se ejecutaban a tiempo por falta de organización. Esto generaba ineficiencia, estrés en el personal y retrasos en la atención a clientes.
 
@@ -56,10 +56,10 @@ Además, los departamentos de Administración y Marketing enfrentaban dificultad
 
 ### 📈 Alcance del programa
 **Funciones:**
--Registro y clasificación de tareas.
--Asignación de tareas a usuarios y departamentos.
--Control de estados (pendiente, en proceso, completada).
--Reportes básicos de productividad.
+- Registro y clasificación de tareas.
+- Asignación de tareas a usuarios y departamentos.
+- Control de estados (pendiente, en proceso, completada).
+- Reportes básicos de productividad.
 
 
 **Limitaciones:**
@@ -84,10 +84,10 @@ Además, los departamentos de Administración y Marketing enfrentaban dificultad
 - **PostgreSQL/Supabase** - Sistema de gestión de base de datos
 - **Estructuras de Datos**:
 -   -LinkedList -> Implementa una cola para gestionar tareas en orden primero en entrar, primero en salir.
-    -ArrayList -> Ayuda a generar una lista dinámica para almacenar y gestionar las tareas
+-   -ArrayList -> Ayuda a generar una lista dinámica para almacenar y gestionar las tareas
 - **Patrones de Diseño**:
 -   -MVC -> Separa la lógica de negocio, interfaz de usuario y control de flujo.
-    -DAO -> Abstrae el acceso a datos, facilitando operaciones CRUD con la base de datos.
+-   -DAO -> Abstrae el acceso a datos, facilitando operaciones CRUD con la base de datos.
 
 ---
 
