@@ -497,7 +497,7 @@ Secretaría de Salud de México. (2022). *Norma Oficial Mexicana NOM-027-SSA3-20
 </table>
 
 <p align="center">
-  <img src="assets/img/Evidencia.jpg" alt="Foto Evidencia" width="300" height="300">
+  <img src="assets/img/evidencia.jpg" alt="Foto Evidencia" width="300" height="300">
 </p>
 
 ## 🔚 Conclusiones y Agradecimientos
