@@ -472,19 +472,20 @@ Secretaría de Salud de México. (2022). *Norma Oficial Mexicana NOM-027-SSA3-20
 ---
 
 ## 👨‍💻 Desarrolladores  
+
 <table>
   <tr>
     <td width="160" align="center">
-      <img src="assets/img/Andres.png" alt="Andres" width="120" height="120" style="border-radius:50%;">
+      <img src="assets/img/Andres.png" alt="Andres" width="120" height="120">
     </td>
     <td width="160" align="center">
-      <img src="assets/img/Samu.png" alt="Samu" width="120" height="120" style="border-radius:50%;">
+      <img src="assets/img/Samu.png" alt="Samu" width="120" height="120">
     </td>
     <td width="160" align="center">
-      <img src="assets/img/Pablo.png" alt="Pablo" width="120" height="120" style="border-radius:50%;">
+      <img src="assets/img/Pablo.png" alt="Pablo" width="120" height="120">
     </td>
     <td width="160" align="center">
-      <img src="assets/img/Papulince.png" alt="Papulince" width="120" height="120" style="border-radius:50%;">
+      <img src="assets/img/Papulince.png" alt="Papulince" width="120" height="120">
     </td>
   </tr>
   <tr>
@@ -496,10 +497,8 @@ Secretaría de Salud de México. (2022). *Norma Oficial Mexicana NOM-027-SSA3-20
 </table>
 
 <p align="center">
-  <img src="assets/img/Evidencia.jpg" alt="Foto Evidencia" width="300" height="300" style="border-radius:50%;">
+  <img src="assets/img/Evidencia.jpg" alt="Foto Evidencia" width="300" height="300">
 </p>
-
-
 
 ## 🔚 Conclusiones y Agradecimientos
 
