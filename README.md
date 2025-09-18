@@ -485,7 +485,7 @@ Secretaría de Salud de México. (2022). *Norma Oficial Mexicana NOM-027-SSA3-20
       <img src="assets/img/Pablo.jpg" alt="Pablo" width="120" height="120">
     </td>
     <td width="160" align="center">
-      <img src="assets/img/Papulince.png" alt="Papulince" width="120" height="120">
+      <img src="assets/img/Papulince.jpg" alt="Papulince" width="120" height="120">
     </td>
   </tr>
   <tr>
