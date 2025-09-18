@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="assets/img/tecmilenio_logo.png" alt="TecMilenio" width="150"/>
+  <img src="assets/img/tecmilenio_logo.jpg" alt="TecMilenio" width="150"/>
   &nbsp;&nbsp;&nbsp;
   <img src="assets/img/Technova_logo.png" alt="TechNova" width="150"/>
 </p>
