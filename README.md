@@ -96,7 +96,7 @@ Además, los departamentos de Administración y Marketing enfrentaban dificultad
 
 ### Estructura de Capas (MVC)
 <p align="center">
-  <img src="assets/img/diagrama.png" alt="Foto Evidencia" width="850" height="850">
+  <img src="assets/img/diagrama.png" alt="Foto Evidencia" width="950" height="950">
 </p>
 
 
