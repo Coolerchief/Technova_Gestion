@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="assets/img/tecmilenio_logo.jpg" alt="TecMilenio" width="150"/>
+  <img src="assets/img/tecmilenio_logo.png" alt="TecMilenio" width="150"/>
   &nbsp;&nbsp;&nbsp;
   <img src="assets/img/Technova_logo.png" alt="TechNova" width="150"/>
 </p>
@@ -83,35 +83,22 @@ Además, los departamentos de Administración y Marketing enfrentaban dificultad
 - **JDBC** - Conectividad con base de datos
 - **PostgreSQL/Supabase** - Sistema de gestión de base de datos
 - **Estructuras de Datos**:
--   -LinkedList -> Implementa una cola para gestionar tareas en orden primero en entrar, primero en salir.
--   -ArrayList -> Ayuda a generar una lista dinámica para almacenar y gestionar las tareas
+    -   LinkedList - Implementa una cola para gestionar tareas en orden primero en entrar, primero en salir.
+    -   ArrayList - Ayuda a generar una lista dinámica para almacenar y gestionar las tareas
 - **Patrones de Diseño**:
--   -MVC -> Separa la lógica de negocio, interfaz de usuario y control de flujo.
--   -DAO -> Abstrae el acceso a datos, facilitando operaciones CRUD con la base de datos.
+    -   MVC - Separa la lógica de negocio, interfaz de usuario y control de flujo.
+    -   DAO - Abstrae el acceso a datos, facilitando operaciones CRUD con la base de datos.
 
 ---
 
 ## 📂 Arquitectura del Sistema
 
+
 ### Estructura de Capas (MVC)
-```
-src/
-├── main/java/
-│   ├── controller/
-│   │   └── TriageManager.java          # Controlador principal
-│   ├── dao/
-│   │   ├── DBConnection.java           # Conexión a BD
-│   │   └── PacienteDAO.java            # Acceso a datos de pacientes
-│   ├── model/
-│   │   ├── Paciente.java               # Modelo de paciente
-│   │   ├── RegistroAtencion.java       # Registro de atención médica
-│   │   └── NivelTriage.java            # Enumeración de niveles
-│   ├── service/
-│   │   └── TriageService.java          # Lógica de negocio
-│   ├── util/
-│   │   └── PriorityQueue.java          # Cola de prioridad personalizada
-│   └── Main.java                       # Punto de entrada
-```
+<p align="center">
+  <img src="assets/img/diagrama.png" alt="Foto Evidencia" width="800" height="800">
+</p>
+
 
 ### Componentes del Sistema
 - **Capa de Presentación**: Interfaces de usuario y controladores
@@ -124,108 +111,12 @@ src/
 ## 📊 Diseño UML
 
 ### Diagrama de Clases
-```mermaid
-classDiagram
-    direction TB
-    
-    class Main {
-        +main(args: String[]): void
-    }
-    
-    class TriageManager {
-        -triageService: TriageService
-        -pacienteDAO: PacienteDAO
-        +iniciar(): void
-        +registrarPaciente(paciente: Paciente): void
-        +asignarNivel(paciente: Paciente): NivelTriage
-        +atenderSiguiente(): RegistroAtencion
-        +generarReporte(): String
-    }
-    
-    class TriageService {
-        -colaPrioridad: PriorityQueue~Paciente~
-        +evaluar(paciente: Paciente): NivelTriage
-        +encolar(paciente: Paciente): void
-        +siguiente(): Paciente
-        +obtenerEstadisticas(): Map~String,Object~
-    }
-    
-    class PacienteDAO {
-        -connection: Connection
-        +save(paciente: Paciente): int
-        +findById(id: int): Paciente
-        +findAll(): List~Paciente~
-        +update(paciente: Paciente): boolean
-    }
-    
-    class Paciente {
-        -id: int
-        -nombre: String
-        -edad: int
-        -sintomas: String
-        -nivelTriage: NivelTriage
-        -fechaLlegada: LocalDateTime
-        +calcularTiempoEspera(): Duration
-    }
-    
-    class NivelTriage {
-        <<enumeration>>
-        ROJO(1, "Emergencia")
-        NARANJA(2, "Muy Urgente")
-        AMARILLO(3, "Urgente")
-        VERDE(4, "Menos Urgente")
-        AZUL(5, "No Urgente")
-        -prioridad: int
-        -descripcion: String
-    }
-    
-    class RegistroAtencion {
-        -id: int
-        -paciente: Paciente
-        -medico: String
-        -fechaAtencion: LocalDateTime
-        -notas: String
-        -diagnostico: String
-    }
-    
-    Main --> TriageManager
-    TriageManager --> TriageService
-    TriageManager --> PacienteDAO
-    TriageService --> PriorityQueue
-    Paciente --> NivelTriage
-    RegistroAtencion --> Paciente
-    PacienteDAO --> DBConnection
-```
 
-### Diagrama de Casos de Uso
-```mermaid
-graph TB
-    subgraph "Sistema de Triage Hospitalario"
-        UC1[Registrar Paciente]
-        UC2[Evaluar Síntomas]
-        UC3[Asignar Nivel Triage]
-        UC4[Gestionar Cola Prioridad]
-        UC5[Atender Paciente]
-        UC6[Registrar Atención]
-        UC7[Generar Reportes]
-        UC8[Consultar Historial]
-    end
-    
-    Recepcionista --> UC1
-    Enfermera --> UC2
-    Enfermera --> UC3
-    Enfermera --> UC4
-    Medico --> UC5
-    Medico --> UC6
-    Medico --> UC8
-    Administrador --> UC7
-    
-    UC2 -.-> UC3
-    UC3 -.-> UC4
-    UC5 -.-> UC6
-```
 
----
+<p align="center">
+  <img src="assets/img/mvc.jpg" alt="Foto Evidencia" width="800" height="800">
+</p>
+
 
 ## 🎓 Estructuras de Datos Aplicadas
 
