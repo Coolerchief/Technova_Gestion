@@ -485,14 +485,14 @@ Secretaría de Salud de México. (2022). *Norma Oficial Mexicana NOM-027-SSA3-20
       <img src="assets/img/Pablo.jpg" alt="Pablo" width="120" height="120">
     </td>
     <td width="160" align="center">
-      <img src="assets/img/Papulince.jpg" alt="Papulince" width="120" height="120">
+      <img src="assets/img/Gael.jpg" alt="Gael" width="120" height="120">
     </td>
   </tr>
   <tr>
-    <td align="center"><b>Andres</b></td>
-    <td align="center"><b>Samu</b></td>
-    <td align="center"><b>Pablo</b></td>
-    <td align="center"><b>Papulince</b></td>
+    <td align="center"><b>Andres Abarca</b></td>
+    <td align="center"><b>Samuel Martínez</b></td>
+    <td align="center"><b>Pablo Núñez</b></td>
+    <td align="center"><b>Gael Marroquín</b></td>
   </tr>
 </table>
 
