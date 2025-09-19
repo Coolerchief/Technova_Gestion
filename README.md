@@ -9,8 +9,6 @@
 
 Proyecto académico para la materia de **Estructuras de Datos** - Sistema de gestión de tareas administrativas, marketing y soporte técnico, implementado en **Java**.
 
-🚧 **Estado:** En desarrollo - Documentación y diseño completados, implementación funcional en progreso.
-
 ---
 
 ## 🧾 INFORMACIÓN DEL PROYECTO
