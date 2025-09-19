@@ -7,9 +7,9 @@
 
 # 🖥️⚙️ Sistema de Gestion de Tareas TechNova
 
-**Proyecto académico** para la materia de **Estructuras de Datos** - Sistema de gestión de triage para áreas de urgencias implementado en Java.
+Proyecto académico para la materia de **Estructuras de Datos** - Sistema de gestión de tareas administrativas, marketing y soporte técnico, implementado en **Java**.
 
-> 🚧🛠️ **Estado:** En Desarrollo - Documentación y diseño en proceso, implementación del codigo por finalizar 
+🚧 **Estado:** En desarrollo - Documentación y diseño completados, implementación funcional en progreso.
 
 ---
 
@@ -25,19 +25,21 @@
 
 ## 📑 ÍNDICE DE CONTENIDO
 
-1. [Descripción del Caso](#-descripción-del-caso)
-2. [Niveles de Triage](#-sistema-de-niveles-de-triage)
-3. [Tecnologías](#️-tecnologías-seleccionadas)
-4. [Arquitectura](#-arquitectura-del-sistema)
-5. [Diseño UML](#-diseño-uml)
-6. [Estructuras de Datos](#-estructuras-de-datos-aplicadas)
-7. [Análisis del Problema](#-análisis-del-problema)
-8. [Caso de Estudio: Hospital Privado Santa Vida](#-caso-de-estudio-hospital-privado-santa-vida)
-9. [Avance del Proyecto](#-avance-del-proyecto)
-10. [Glosario](#-glosario-de-términos)
-11. [Referencias](#-bibliografía-formato-apa)
-12. [Autores](#-desarrolladores)
-
+1. [ Descripción del Caso](#-descripción-del-caso)
+2. [ Sistema de clasificación de Tareas por Prioridad](#-sistema-de-clasificación-de-tareas-por-prioridad)
+3. [Tecnologías usadas en el proyecto](#-Tecnologias-usadas-en-el-proyecto)
+4. [ Arquitectura](#-arquitectura-del-sistema)
+5. [ Diseño UML](#-diseño-uml)
+6. [ Estructuras de Datos](#-estructuras-de-datos-aplicadas)
+7. [ Análisis del Problema](#-análisis-del-problema)
+8. [ Caso de Estudio: Organización de Tareas en TechNova](#-caso-de-estudio-organización-de-tareas-en-technova)
+9. [ Roles del Sistema](#-roles-del-sistema)
+10. [ Avance del Proyecto](#-avance-del-proyecto)
+11. [ Glosario de Términos](#-glosario-de-términos)
+12. [ Bibliografía](#-bibliografía-formato-apa)
+13. [ Objetivos de Aprendizaje Alcanzados](#-objetivos-de-aprendizaje-alcanzados)
+14. [Desarrolladores](#-Desarrolladores)
+15. [ Conclusiones y Agradecimientos](#-conclusiones-y-agradecimientos)
 ---
 
 ## 🔍📝 Descripción del Caso
@@ -63,7 +65,8 @@ Además, los departamentos de Administración y Marketing enfrentaban dificultad
 
 
 **Limitaciones:**
-(POR ESTABLECER)
+- Reportes estadísticos avanzados  
+- Notificaciones externas  
 
 ---
 
@@ -79,15 +82,10 @@ Además, los departamentos de Administración y Marketing enfrentaban dificultad
 
 ## 🛠️ Tecnologías usadas en el proyecto
 
-- **Java** - Lenguaje principal de desarrollo
-- **JDBC** - Conectividad con base de datos
-- **PostgreSQL/Supabase** - Sistema de gestión de base de datos
-- **Estructuras de Datos**:
-    -   LinkedList - Implementa una cola para gestionar tareas en orden primero en entrar, primero en salir.
-    -   ArrayList - Ayuda a generar una lista dinámica para almacenar y gestionar las tareas
-- **Patrones de Diseño**:
-    -   MVC - Separa la lógica de negocio, interfaz de usuario y control de flujo.
-    -   DAO - Abstrae el acceso a datos, facilitando operaciones CRUD con la base de datos.
+- **Java 17+** - Lenguaje principal de desarrollo  
+- **Swing** - Interfaz gráfica  
+- **Estructuras de Datos:** Pilas, Colas, Listas  
+- **Patrón de diseño:** MVC (Modelo-Vista-Controlador)  
 
 ---
 
@@ -100,11 +98,38 @@ Además, los departamentos de Administración y Marketing enfrentaban dificultad
 </p>
 
 
-### Componentes del Sistema
-- **Capa de Presentación**: Interfaces de usuario y controladores
-- **Capa de Lógica de Negocio**: Servicios de triage y evaluación
-- **Capa de Acceso a Datos**: DAO y gestión de persistencia
-- **Capa de Datos**: Base de datos PostgreSQL con esquema médico
+### 🧩 Componentes del Sistema
+
+- **Capa de Presentación (View / UI)**  
+  - 📂 `view/` → Contiene las interfaces gráficas para la interacción del usuario.  
+  - 🖥️ `interfaz.java` → Clase principal de interfaz para mostrar y capturar información.  
+
+- **Capa de Control (Controller)**  
+  - 📂 `controller/` → Coordina la lógica entre modelo, servicio y vista.  
+  - ⚙️ Clases que gestionan las operaciones del sistema desde la UI.  
+
+- **Capa de Lógica de Negocio (Service)**  
+  - 📂 `service/` → Implementa la lógica del negocio (manejo de triage/tareas, clasificación, validaciones).  
+  - 📝 `GestorTareasMain.java` → Punto de ejecución del sistema que conecta las funciones de servicio con los controladores.  
+
+- **Capa de Acceso a Datos (DAO)**  
+  - 📂 `dao/` → Se encarga de la conexión con la base de datos y operaciones CRUD.  
+  - 🔗 `DBConnection.java` (o similar) → Clase para gestionar la conexión.  
+
+- **Capa de Modelo (Model)**  
+  - 📂 `model/` → Clases que representan las entidades principales.  
+  - 👤 Ejemplo: `Paciente.java`, `RegistroAtencion.java`, `NivelTriage.java`.  
+
+- **Capa de Utilidades (Util)**  
+  - 📂 `util/` → Herramientas y clases auxiliares para estructuras de datos personalizadas.  
+  - 📌 `cola.java`, `pilas.java`, `listas.java` → Implementaciones de estructuras de datos.  
+
+- **Otros Archivos Importantes**  
+  - 🚀 `main.java` → Punto de entrada alternativo al sistema.  
+  - ✅ `TODO.md` → Lista de pendientes y funcionalidades en desarrollo.  
+  - 📄 `readme.txt` → Notas rápidas o documentación básica.  
+  - 📦 `lib/` → Librerías externas necesarias para correr el sistema.  
+  - 🗂️ `bin/` → Archivos compilados.  
 
 ---
 
@@ -120,245 +145,181 @@ Además, los departamentos de Administración y Marketing enfrentaban dificultad
 
 ## 🎓 Estructuras de Datos Aplicadas
 
-### Cola de Prioridad (Priority Queue)
-- **Propósito**: Organizar pacientes según urgencia médica
-- **Implementación planeada**: Heap binario para eficiencia O(log n)
-- **Criterio de prioridad**: Nivel de triage + tiempo de llegada
-- **Operaciones**: Insert O(log n), ExtractMax O(log n), Peek O(1)
+**Pila (Stack):**
+- Propósito: Gestionar incidencias críticas  
+- Operaciones: `push`, `pop`, `peek`  
+- Uso: Priorizar atención inmediata a problemas críticos  
 
-### HashMap
-- **Propósito**: Búsqueda rápida de pacientes por ID
-- **Complejidad objetivo**: O(1) promedio para búsquedas
-- **Implementación**: Tabla de dispersión con manejo de colisiones
+**Cola (Queue):**
+- Propósito: Gestionar tareas administrativas y de marketing  
+- Operaciones: `offer`, `poll`, `peek`  
+- Uso: Procesar tareas en orden de llegada  
 
-### LinkedList  
-- **Propósito**: Historial de atenciones del paciente
-- **Ventaja**: Inserción y eliminación eficiente O(1)
-- **Uso**: Mantener secuencia cronológica de eventos
-
-### Enum (NivelTriage)
-- **Propósito**: Estandarizar niveles de urgencia médica
-- **Ventaja**: Type-safety y mantenibilidad del código
-- **Implementación**: Constantes con propiedades asociadas
+**Lista (LinkedList):**
+- Propósito: Gestionar tareas generales de departamentos  
+- Operaciones: `add`, `remove`, `contains`  
+- Uso: Mantener secuencia de tareas por departamento 
 
 ---
 
 ## 🔍 Análisis del Problema
 
-### Problemática Identificada
-Los sistemas de urgencias hospitalarias enfrentan desafíos críticos:
-- **Sobrecarga de pacientes** en horarios pico
-- **Dificultad para priorizar** casos realmente urgentes
-- **Tiempos de espera** inadecuados para diferentes niveles de urgencia
-- **Falta de trazabilidad** en el proceso de atención
+**Problemática Identificada:**  
+- Difícil priorizar incidencias críticas sobre tareas regulares  
+- Falta de un registro ordenado de tareas por departamento  
+- Necesidad de un sistema rápido, confiable y fácil de usar  
 
-### Requisitos Funcionales
-1. **RF01**: Registrar pacientes con datos básicos y síntomas
-2. **RF02**: Evaluar automáticamente el nivel de triage
-3. **RF03**: Mantener cola de prioridad dinámica
-4. **RF04**: Llamar pacientes según urgencia médica
-5. **RF05**: Registrar atención médica proporcionada
+**Requisitos Funcionales:**  
+- Registrar incidencias críticas  
+- Registrar tareas administrativas y de marketing  
+- Registrar tareas por departamento  
+- Consultar próximas tareas  
+- Atender tareas según prioridad  
 
-### Requisitos No Funcionales
-1. **RNF01**: Tiempo de respuesta < 2 segundos
-2. **RNF02**: Capacidad para 100+ pacientes simultáneos
-3. **RNF03**: Interfaz intuitiva para personal médico
-4. **RNF04**: Disponibilidad 24/7 del sistema
-5. **RNF05**: Seguridad en datos médicos sensibles
+**Requisitos No Funcionales:**  
+- Estructuras de datos eficientes para alta concurrencia  
+
+
 
 ---
 
-## 📌 Caso de Estudio: Hospital Privado Santa Vida
+## 📌 Caso de Estudio: Organización de Tareas en TechNova
 
-El Hospital Privado **Santa Vida**, ubicado en Monterrey, enfrentaba un problema en su área de **Urgencias – Triage**:
+La empresa TechNova necesita organizar las tareas internas para no retrasar proyectos ni incidencias críticas. Se aplican **Pilas para incidencias críticas**, **Colas para tareas administrativas/marketing** y **Listas para tareas de departamentos**.
 
-- Los pacientes se registraban en una lista general sin diferenciar nivel de urgencia  
-- Casos críticos esperaban más de lo debido  
-- En emergencias masivas (ej. accidentes viales) no había un mecanismo claro de distribución  
-- Faltaba rapidez para consultar expedientes cuando varios médicos atendían en paralelo  
+- Las incidencias críticas se mezclaban con tareas regulares, dificultando priorizar lo urgente.  
+- Tareas administrativas y de marketing se procesaban de manera desordenada, generando retrasos en entregas y proyectos.  
+- Cada departamento llevaba su propia lista de tareas sin un registro centralizado, lo que provocaba duplicidad y pérdida de información.  
 
 ### ❌ Problemática
-Esto generaba retrasos, riesgo médico y desorganización en el área de urgencias.
+Estos problemas generaban retrasos en la atención de incidencias críticas, confusión en la gestión de tareas y pérdida de productividad en toda la empresa. Por ejemplo:
+
+- Una incidencia crítica de soporte técnico podía permanecer sin atención horas, mientras tareas menos urgentes eran realizadas primero.  
+- Una tarea importante de marketing para un lanzamiento podía quedar retrasada porque se registró en una lista sin prioridad.  
+- Los supervisores tenían dificultad para generar un resumen confiable de todas las tareas pendientes de cada departamento.  
+
 
 ### 💡 Solución Propuesta
-Nuestro sistema digital de triage implementa estructuras de datos para optimizar el flujo de pacientes:
+Nuestro sistema digital de gestión de tareas implementa **estructuras de datos especializadas** para optimizar el flujo y la atención según prioridad:
 
-- **Pilas (Stack)** → Niveles 1 y 2 (emergencias vitales y severas)  
-- **Colas (Queue)** → Niveles 3 y 4 (urgencias moderadas y menores)  
-- **Listas (List)** → Nivel 5 (no urgentes)  
-- **Tablas Hash** → Identificación rápida y gestión en situaciones de concurrencia  
+- **Pilas (Stack)** → Gestionan **incidencias críticas** de soporte técnico.  
+  - Ejemplo: Si un servidor cae, esta incidencia se agrega al tope de la pila y se atiende inmediatamente, garantizando que los problemas más urgentes sean resueltos primero.  
+- **Colas (Queue)** → Gestionan **tareas administrativas y de marketing**.  
+  - Ejemplo: Una campaña de redes sociales se agrega al final de la cola y se atiende en orden de llegada, asegurando que todas las tareas regulares se procesen de manera justa.  
+- **Listas (LinkedList)** → Gestionan **tareas de departamentos específicos**.  
+  - Ejemplo: Tareas de desarrollo, finanzas o recursos humanos se agregan a la lista correspondiente, permitiendo consultar, eliminar o reordenar tareas según las necesidades de cada equipo.  
+
 
 ### 📊 Ejemplo de Flujo
-- Carlos (Nivel 1) → Pila de emergencias, atención inmediata  
-- María (Nivel 3) → Cola de urgencia moderada  
-- Luis (Nivel 5) → Lista de no urgentes  
-- Ana (Nivel 2) → Prioridad en la pila sobre casos moderados  
+1. Incidencia crítica llega → Se agrega a la Pila → Urgente 
+2. Tarea administrativa llega → Se agrega a la Cola → Tareas diarias y ocasionales
+3. Tarea de departamento llega → Se agrega a la Lista → Colaborativa
 
 ### ✅ Beneficios
-- Atención justa y priorizada  
-- Orden en la sala de espera  
-- Rapidez en emergencias masivas  
-- Gestión hospitalaria clara y eficiente  
+- Organización eficiente de tareas según prioridad  
+- Interfaz amigable y profesional  
+- Facilita seguimiento y gestión interna  
+- Base para futuras mejoras y persistencia de datos  
 
 ---
 
 
 ## 👥 Roles del Sistema
 
-### 🏥 Recepcionista
-- **Responsabilidades**: Registro inicial de pacientes
-- **Funciones**: Capturar datos básicos de identificación
-- **Acceso**: Módulo de registro únicamente
-
-### 👩‍⚕️ Enfermera de Triage
-- **Responsabilidades**: Evaluación médica y clasificación
-- **Funciones**: 
-  - Evaluar signos vitales y síntomas
-  - Asignar nivel de triage según protocolo
-  - Gestionar cola de prioridad
-- **Acceso**: Módulos de evaluación y gestión de cola
-
-### 👨‍⚕️ Médico
-- **Responsabilidades**: Atención médica directa
-- **Funciones**:
-  - Atender pacientes según prioridad asignada
-  - Registrar diagnóstico y tratamiento
-  - Consultar historial médico del paciente
-- **Acceso**: Módulos de atención y consulta
-
-### 👨‍💼 Administrador
-- **Responsabilidades**: Supervisión y reportes
-- **Funciones**:
-  - Generar reportes estadísticos del sistema
-  - Configurar parámetros de triage
-  - Gestionar usuarios y permisos
-- **Acceso**: Módulos administrativos y de reportes
+| Rol | Función Principal | Acceso |
+|-----|-----------------|--------|
+| Gerente | Supervisar tareas y cerrar el sistema | Panel completo |
+| Empleado | Agregar, consultar y atender tareas | Panel principal |
 
 ---
 
 ## 📈 Avance del Proyecto
 
-### ✅ Completado
-- [x] **Análisis de requisitos** - Identificación completa de necesidades
-- [x] **Diseño de arquitectura** - Estructura MVC definida
-- [x] **Diagramas UML** - Clases y casos de uso documentados
-- [x] **Definición de estructuras de datos** - Selección justificada
-- [x] **Documentación inicial** - README y formato académico
-- [x] **Glosario de términos** - Definiciones técnicas y médicas
+**✅ Completado:**  
+- Análisis de requisitos  
+- Diseño de arquitectura MVC  
+- Diagramas UML y diseño de clases  
+- Implementación de clases `Pilas`, `Colas`, `Listas`  
+- Interfaz básica de usuario  
 
-### 🔄 En Desarrollo
-- [ ] **Implementación de clases modelo** (Paciente, NivelTriage, RegistroAtencion)
-- [ ] **Desarrollo de cola de prioridad personalizada** con algoritmo heap
-- [ ] **Configuración de conexión a base de datos** con Supabase/PostgreSQL
-- [ ] **Lógica de evaluación de triage** con algoritmos de clasificación
-- [ ] **Interfaces básicas de usuario** para cada rol del sistema
+**🔄 En Desarrollo:**  
+- Mejoras en validaciones de entrada  
+- Guardado y recuperación de datos (futuro)  
+- Mejoras en layout de la interfaz  
 
-### 📅 Por Hacer
-- [ ] **Pruebas unitarias** de estructuras de datos implementadas
-- [ ] **Pruebas de integración** entre capas del sistema
-- [ ] **Optimización de algoritmos** para mejor rendimiento
-- [ ] **Documentación técnica final** con resultados de pruebas
-- [ ] **Presentación del proyecto** para evaluación académica
-
----
-
-## 🚀 Próximos Pasos Técnicos
-
-### Fase 1: Implementación de Modelos (Semana 1-2)
-1. **Crear clase Paciente** con validaciones de datos
-2. **Implementar enum NivelTriage** con lógica de priorización
-3. **Desarrollar RegistroAtencion** para trazabilidad
-
-### Fase 2: Estructuras de Datos (Semana 3-4)
-1. **Cola de prioridad personalizada** usando heap binario
-2. **HashMap para búsquedas** rápidas por ID de paciente
-3. **LinkedList para historial** de atenciones
-
-### Fase 3: Lógica de Negocio (Semana 5-6)
-1. **Algoritmos de evaluación** de síntomas
-2. **Servicios de triage** con reglas médicas
-3. **Controladores** para coordinar operaciones
-
-### Fase 4: Persistencia y Pruebas (Semana 7-8)
-1. **Conexión a base de datos** y operaciones CRUD
-2. **Testing unitario** de cada componente
-3. **Pruebas de rendimiento** del sistema completo
+**📅 Por Hacer:**  
+- Pruebas unitarias   
+- Optimización y refactorización de código  
+- Publicación en GitHub y despliegue 
 
 ---
 
 ## 📚 Glosario de Términos
 
-### Términos Médicos
-- **Triage**: Sistema de clasificación de pacientes según la urgencia de su condición médica, originado en medicina militar
-- **Signos Vitales**: Medidas básicas de las funciones corporales esenciales (presión arterial, pulso, temperatura, respiración)
-- **Urgencias**: Área hospitalaria especializada en la atención inmediata de emergencias médicas y trauma
-- **Protocolo Manchester**: Sistema internacional de triage que clasifica pacientes en 5 niveles de prioridad
+### Términos de Gestión de Tareas
+- **Incidencia Crítica**: Problema o fallo que requiere atención inmediata, gestionado mediante una **pila (Stack)** para garantizar prioridad máxima.  
+- **Tarea Administrativa/Marketing**: Actividad que debe procesarse en orden de llegada, gestionada con una **cola (Queue)** para respetar el flujo FIFO.  
+- **Tarea por Departamento**: Actividad específica de un departamento, gestionada mediante **listas (LinkedList)**, permitiendo agregar, eliminar o consultar según necesidad.  
+- **Prioridad de Tarea**: Criterio que determina qué tarea atender primero, implementado mediante la posición en la pila o cola y validaciones internas.  
 
 ### Términos de Estructuras de Datos
-- **Cola de Prioridad**: Estructura de datos abstracta donde cada elemento tiene una prioridad asociada y se procesan en orden de importancia
-- **Heap Binario**: Árbol binario completo que mantiene la propiedad de heap (padre mayor/menor que hijos)
-- **Complejidad Temporal**: Medida de la cantidad de tiempo que toma ejecutar un algoritmo en función del tamaño de entrada
-- **HashMap**: Estructura de datos que implementa una tabla de dispersión para mapear claves a valores con acceso O(1)
+- **Pila (Stack)**: Estructura LIFO (Last In, First Out), usada para incidencias críticas; la última tarea agregada se atiende primero.  
+- **Cola (Queue)**: Estructura FIFO (First In, First Out), usada para tareas administrativas y de marketing; la primera tarea en entrar es la primera en atenderse.  
+- **Lista (LinkedList)**: Estructura dinámica que permite agregar, eliminar y consultar tareas por departamento de manera flexible.   
+- **Complejidad Temporal**: Tiempo que tarda una operación según el tamaño de la estructura de datos; útil para analizar eficiencia de la pila, cola y lista.  
 
 ### Términos de Ingeniería de Software
-- **DAO (Data Access Object)**: Patrón de diseño que proporciona una interfaz abstracta para acceder a datos
-- **MVC (Model-View-Controller)**: Patrón arquitectónico que separa la aplicación en tres componentes interconectados
-- **JDBC**: API de Java que define cómo un cliente puede acceder a una base de datos relacional
-- **UML**: Lenguaje de modelado unificado para especificar, visualizar y documentar sistemas de software
+- **MVC (Model-View-Controller)**: Patrón que separa la lógica de negocio, la interfaz y los datos, aplicado en nuestro proyecto para mantener código organizado.  
+- **DAO (Data Access Object)**: Patrón para acceder a datos de manera abstracta; en nuestro caso, puede usarse para persistencia futura de tareas en base de datos.  
+- **JDBC**: API de Java que permitirá conectarse a bases de datos para almacenar tareas de manera permanente (implementación futura).  
+- **UML**: Lenguaje de modelado usado para diagramar clases (`Pilas`, `Colas`, `Listas`, `Interfaz`) y casos de uso del sistema.  
 
 ### Abreviaturas Técnicas
-- **BD**: Base de Datos
-- **CRUD**: Create, Read, Update, Delete (operaciones básicas de persistencia)
-- **ED**: Estructuras de Datos
-- **POO**: Programación Orientada a Objetos
-- **API**: Application Programming Interface
-- **SQL**: Structured Query Language
+- **ED**: Estructuras de Datos  
+- **CRUD**: Create, Read, Update, Delete (operaciones que se aplicarán a tareas y registros en base de datos futura)  
+- **API**: Conjunto de funciones para interactuar con sistemas o módulos del programa  
+- **GUI**: Graphical User Interface, en nuestro caso implementada con **Swing**  
+- **FIFO / LIFO**: First In First Out / Last In First Out, principios de funcionamiento de colas y pilas  
 
 ---
 
 ## 📖 Bibliografía (Formato APA)
 
-### Referencias Académicas Principales
-Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2022). *Introduction to algorithms* (4th ed.). MIT Press.
+### 📚 Referencias Académicas
+1. **Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, R. L. (2022).** *Introduction to Algorithms* (4th ed.). MIT Press.  
+   _Utilizado para el estudio de algoritmos y estructuras de datos aplicadas en la gestión de tareas._
 
-Weiss, M. A. (2020). *Data structures and algorithm analysis in Java* (3rd ed.). Pearson Education.
+2. **Weiss, M. A. (2020).** *Data Structures and Algorithm Analysis in Java* (3rd ed.). Pearson Education.  
+   _Referencia principal para la implementación de pilas, colas y listas en Java._
 
-Silberschatz, A., Galvin, P. B., & Gagne, G. (2018). *Operating system concepts* (10th ed.). John Wiley & Sons.
+3. **Silberschatz, A., Galvin, P. B., & Gagne, G. (2018).** *Operating System Concepts* (10th ed.). John Wiley & Sons.  
+   _Consultado para entender conceptos de concurrencia y manejo de procesos en sistemas._
 
-### Referencias Médicas
-Manchester Triage Group. (2014). *Emergency triage: Manchester triage group* (3rd ed.). BMJ Books.
+### 💻 Referencias Técnicas
+1. **Oracle Corporation. (2024).** *Java SE 17 Documentation: Collections Framework*.  _Documentación oficial de Java para el manejo de colecciones, listas, colas y pilas._
 
-World Health Organization. (2023). *Emergency care systems framework*. https://www.who.int/emergencycare
-
-### Referencias Técnicas
-Oracle Corporation. (2024). *Java SE 17 Documentation: Collections Framework*. https://docs.oracle.com/en/java/javase/17/
-
-Fowler, M. (2018). *Patterns of enterprise application architecture* (2nd ed.). Addison-Wesley Professional.
-
-### Fuentes Gubernamentales
-Secretaría de Salud de México. (2022). *Norma Oficial Mexicana NOM-027-SSA3-2013, Regulación de los servicios de salud*. Diario Oficial de la Federación.
+2. **Fowler, M. (2018).** *Patterns of Enterprise Application Architecture* (2nd ed.). Addison-Wesley Professional.  
+   _Consultado para aplicar patrones de diseño como MVC en la organización del proyecto._
 
 ---
 
 ## 🎯 Objetivos de Aprendizaje Alcanzados
 
 ### Conceptos de Estructuras de Datos
-- **Implementación práctica** de colas de prioridad en contexto real
-- **Análisis de complejidad** temporal y espacial de algoritmos
-- **Diseño de estructuras** eficientes para problemáticas específicas
-- **Optimización de rendimiento** mediante selección adecuada de ED
+- **Implementación práctica de pilas, colas y listas** para la gestión de tareas internas y incidencias críticas.  
+- **Análisis de complejidad temporal y espacial** de operaciones en Stack, Queue y LinkedList, evaluando eficiencia en escenarios de alta concurrencia de tareas.  
+- **Diseño de estructuras de datos eficientes** adaptadas a distintos tipos de tareas: urgentes (Stack), regulares (Queue) y departamentales (LinkedList).  
+- **Optimización del rendimiento** mediante selección de la estructura de datos correcta para cada tipo de tarea y flujo de trabajo.  
 
 ### Habilidades de Ingeniería de Software
-- **Arquitectura por capas** con separación de responsabilidades
-- **Patrones de diseño** aplicados a sistemas de información
-- **Documentación técnica** completa y profesional
-- **Metodología de desarrollo** estructurada y planificada
+- **Aplicación de patrones de diseño** básicos y buenas prácticas para mantener el código organizado y modular.  
+- **Documentación técnica clara y profesional**, incluyendo diagramas UML y explicación de estructuras y flujo de tareas.  
+- **Metodología de desarrollo estructurada**, planificando fases de análisis, diseño, implementación y pruebas de manera ordenada.  
 
 ### Competencias Interdisciplinarias
-- **Comprensión del dominio médico** y sus requerimientos críticos
-- **Trabajo en equipo** para desarrollo de sistemas complejos
-- **Comunicación técnica** efectiva con stakeholders
-- **Ética en el manejo** de información médica sensible
+- **Comprensión del dominio de gestión de proyectos internos**, adaptando conceptos de priorización a escenarios de trabajo real.  
+- **Trabajo en equipo y coordinación** al gestionar múltiples tipos de tareas y usuarios en el sistema.  
+- **Comunicación técnica efectiva**, explicando flujos de tareas, estructuras utilizadas y resultados a compañeros o evaluadores.  
 
 ---
 
@@ -393,24 +354,18 @@ Secretaría de Salud de México. (2022). *Norma Oficial Mexicana NOM-027-SSA3-20
 
 ## 🔚 Conclusiones y Agradecimientos
 
-### Conclusiones del Proyecto
-El desarrollo del Sistema de Triage Hospitalario ha representado una experiencia enriquecedora que nos ha permitido aplicar conocimientos teóricos de estructuras de datos en un contexto práctico y socialmente relevante. Los principales logros incluyen:
+El desarrollo del Sistema de Gestión de Tareas de TechNova ha permitido aplicar de manera práctica los conocimientos adquiridos en estructuras de datos y programación orientada a objetos. Los principales logros incluyen:
 
-1. **Comprensión profunda** de la importancia de las estructuras de datos en sistemas críticos
-2. **Desarrollo de habilidades** de análisis y diseño de software
-3. **Aplicación práctica** de algoritmos de ordenamiento y búsqueda
-4. **Sensibilización** sobre la responsabilidad en el desarrollo de sistemas de salud
+- **Implementación efectiva de pilas, colas y listas**, adaptadas a distintos tipos de tareas: urgentes, administrativas y departamentales.  
+- **Optimización del flujo de trabajo**, priorizando incidencias críticas y garantizando que las tareas regulares se procesen en orden de llegada.  
+- **Desarrollo de una interfaz gráfica intuitiva**, que permite a los usuarios interactuar con el sistema de forma eficiente y sencilla.  
+- **Documentación completa y profesional**, incluyendo diagramas UML, explicación de estructuras de datos aplicadas y casos de uso.  
+- **Preparación para futuras mejoras**, como persistencia de datos, reportes automáticos y ampliación de funcionalidades.  
 
-### Impacto Académico
-Este proyecto nos ha permitido integrar conocimientos de múltiples áreas: programación orientada a objetos, bases de datos, ingeniería de software y comprensión del dominio médico, demostrando la naturaleza interdisciplinaria de la ingeniería en sistemas computacionales.
+### Impacto Académico y Práctico
+Este proyecto ha permitido integrar conocimientos de programación, estructuras de datos, diseño de software y gestión de procesos internos. Además, ha demostrado cómo los conceptos teóricos pueden aplicarse a un escenario práctico, mejorando la organización y eficiencia de tareas dentro de una empresa.
 
 ### Agradecimientos
-- **Profesora Blanca Aracely Aranda Machorro** por su guía experta y dedicación en la enseñanza de estructuras de datos
-- **Personal médico consultado** por compartir su experiencia en procesos de triage hospitalario
-- **Universidad TecMilenio** por proporcionar los recursos tecnológicos y el ambiente académico necesario
-- **Compañeros de equipo** por su colaboración, compromiso y aportaciones valiosas al proyecto
-
----
-
-> 📚 **Proyecto Académico TecMilenio** - Estructuras de Datos  
-> 🎓 Desarrollado como parte del aprendizaje integral en ingeniería de sistemas
+- A **la profesora Blanca Aracely Aranda Machorro**, por su guía y apoyo en el desarrollo académico del proyecto.  
+- A **compañeros y colaboradores**, por la revisión, sugerencias y apoyo durante la implementación del sistema.  
+- A **la Universidad TecMilenio**, por proporcionar el entorno académico y los recursos tecnológicos necesarios.  
