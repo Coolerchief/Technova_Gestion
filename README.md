@@ -25,36 +25,69 @@ Proyecto académico para la materia de **Estructuras de Datos** - Sistema de ges
 
 ## 📑 ÍNDICE DE CONTENIDO
 
-1. [ Descripción del Caso](#-descripción-del-caso)
-2. [ Sistema de clasificación de Tareas por Prioridad](#-sistema-de-clasificación-de-tareas-por-prioridad)
-3. [Tecnologías usadas en el proyecto](#-Tecnologias-usadas-en-el-proyecto)
-4. [ Arquitectura](#-arquitectura-del-sistema)
-5. [ Diseño UML](#-diseño-uml)
-6. [ Estructuras de Datos](#-estructuras-de-datos-aplicadas)
-7. [ Análisis del Problema](#-análisis-del-problema)
-8. [ Caso de Estudio: Organización de Tareas en TechNova](#-caso-de-estudio-organización-de-tareas-en-technova)
-9. [ Roles del Sistema](#-roles-del-sistema)
-10. [ Avance del Proyecto](#-avance-del-proyecto)
-11. [ Glosario de Términos](#-glosario-de-términos)
-12. [ Bibliografía](#-bibliografía-formato-apa)
-13. [ Objetivos de Aprendizaje Alcanzados](#-objetivos-de-aprendizaje-alcanzados)
-14. [Desarrolladores](#-Desarrolladores)
-15. [ Conclusiones y Agradecimientos](#-conclusiones-y-agradecimientos)
+1. [Descripción del Caso](#descripcion-del-caso)
+2. [Solicitudes del Cliente para el Programa](#solicitudes-del-cliente-para-el-programa)
+3. [Solución Propuesta](#solucion-propuesta)
+4. [Alcance del Programa](#alcance-del-programa)
+5. [Roles del Sistema](#roles-del-sistema)
+6. [Sistema de Clasificación de Tareas por Prioridad](#sistema-de-clasificacion-de-tareas-por-prioridad)
+7. [Tecnologías Usadas en el Proyecto](#tecnologias-usadas-en-el-proyecto)
+8. [Arquitectura del Sistema](#arquitectura-del-sistema)
+9. [Componentes del Sistema](#componentes-del-sistema)
+10. [Diseño UML](#diseno-uml)
+11. [Estructuras de Datos Aplicadas](#estructuras-de-datos-aplicadas)
+12. [Avance del Proyecto](#avance-del-proyecto)
+13. [Glosario de Términos](#glosario-de-terminos)
+14. [Bibliografía](#bibliografia)
+15. [Conocimientos Adquiridos](#conocimientos-adquiridos)
+16. [Desarrolladores](#desarrolladores)
+17. [Conclusiones](#conclusiones)
+
 ---
 
 ## 🔍📝 Descripción del Caso
 
 ### Estudio de caso
-En TechNova, el equipo de Soporte Técnico notó que constantemente se generaba caos durante los turnos: mientras algunos técnicos atendían tickets urgentes de clientes con problemas críticos, otras solicitudes importantes quedaban olvidadas o se realizaban en desorden. Por ejemplo, un cliente podía reportar que su servidor estaba caído, pero al mismo tiempo llegaban varias solicitudes de mantenimiento que, aunque menos urgentes, también necesitaban seguimiento.
-Además, los departamentos de Administración y Marketing enfrentaban dificultades similares: los reportes financieros se retrasaban porque los responsables estaban ocupados con tareas imprevistas, y las campañas publicitarias a veces no se ejecutaban a tiempo por falta de organización. Esto generaba ineficiencia, estrés en el personal y retrasos en la atención a clientes.
+En TechNova, el equipo de Soporte Técnico detectó que la gestión de tareas presentaba problemas de eficiencia durante los turnos. Mientras algunos técnicos atendían tickets urgentes de clientes con incidencias críticas, otras solicitudes importantes quedaban sin atención o se realizaban en desorden. Por ejemplo, un cliente podía reportar que su servidor estaba caído, mientras que varias solicitudes de mantenimiento menos urgentes también requerían seguimiento.  
 
+Asimismo, los departamentos de Administración y Marketing enfrentaban dificultades similares: los reportes financieros se retrasaban porque los responsables estaban ocupados con tareas imprevistas, y las campañas publicitarias a veces no se ejecutaban a tiempo debido a la falta de un sistema centralizado de gestión de tareas.  
+
+### ❌ Problemática
+Desde un enfoque técnico, identificamos que:  
+- Las incidencias críticas se mezclaban con tareas regulares, dificultando la priorización basada en urgencia.  
+- Cada departamento gestionaba sus listas de tareas de manera independiente, generando duplicidad y pérdida de información.  
+- No existía un registro centralizado ni un sistema automatizado de seguimiento, lo que provocaba retrasos y sobrecarga en el personal.
+- Una tarea importante de marketing para un lanzamiento podía quedar retrasada porque se registró en una lista sin prioridad.  
+- Los supervisores tenían dificultad para generar un resumen confiable de todas las tareas pendientes de cada departamento.
+
+Esta situación generaba confusión, pérdida de productividad y retrasos en la atención a clientes, afectando la eficiencia global de TechNova. Nuestro objetivo es implementar un sistema que permita priorizar, organizar y centralizar las tareas para todos los departamentos, mejorando tanto la experiencia del usuario como el rendimiento del equipo. 
+
+  ### ✅ Beneficios
+- Organización eficiente de tareas según prioridad  
+- Interfaz amigable y profesional  
+- Facilita seguimiento y gestión interna  
+- Base para futuras mejoras y persistencia de datos
+
+---
 
 ### 📩 Solicitudes del cliente para el programa
-- ✅(COMPLETADO) - Persistencia de Datos: Implementar un sistema de almacenamiento para guardar las tareas y que no se pierdan al cerrar el programa.
-- ✅(COMPLETADO) - Interfaz Gráfica (GUI): Desarrollar una interfaz gráfica para mejorar la experiencia del usuario, permitiendo una mejor interacción.
-- ⏳(EN PROCESO) - Notificaciones y Recordatorios: Añadir la funcionalidad de notificaciones o recordatorios para tareas urgentes.
+- ✅(COMPLETADO) - Programa principal: Implementar un sistema integral de gestión de tareas que centralice la información de todos los departamentos y permita priorización y seguimiento eficiente.  
+- ✅(COMPLETADO) - Persistencia de Datos: Implementar un sistema de almacenamiento para guardar las tareas y que no se pierdan al cerrar el programa.  
+- ✅(COMPLETADO) - Interfaz Gráfica (GUI): Desarrollar una interfaz gráfica para mejorar la experiencia del usuario, permitiendo una mejor interacción.  
+- ⏳(EN PROCESO) - Notificaciones y Recordatorios: Añadir la funcionalidad de notificaciones o recordatorios para tareas urgentes.  
 - ✅(COMPLETADO) - Mejorar la Gestión de Usuarios: Agregar un sistema para asignar tareas a diferentes usuarios o equipos dentro de los departamentos.
 
+---
+
+  ### 💡 Solución Propuesta
+| Solución | Descripción | Estado |
+|----------|-------------|--------|
+| 🟢🔴🔵 **Clasificación por colores y triage** | Cada tarea se etiqueta según su nivel de urgencia: Rojo → Urgente / crítica; Verde → Importante / colaborativa; Azul → Regular / ocasional | ✅ Aceptada |
+| ☁️ **Uso de base de datos Supabase** | Proponemos almacenar todas las tareas en Supabase, permitiendo sincronización en tiempo real, consultas eficientes y respaldo seguro de la información | ✅ Aceptada |
+| 📊 **Registro de avance de tareas** | Permite llevar un seguimiento del progreso de cada tarea, facilitando control interno y reportes de avance | ✅ Aceptada |
+| ❌ **Exportación de tareas a CSV** | Permite exportar las tareas a un archivo CSV para reportes o análisis externos | ❌ Denegada (opción futura) |
+
+---
 
 ### 📈 Alcance del programa
 **Funciones:**
@@ -67,6 +100,14 @@ Además, los departamentos de Administración y Marketing enfrentaban dificultad
 **Limitaciones:**
 - Reportes estadísticos avanzados  
 - Notificaciones externas  
+
+---
+## 👥 Roles del Sistema
+
+| Rol | Función Principal | Acceso |
+|-----|-----------------|--------|
+| Gerente | Supervisar tareas y cerrar el sistema | Panel completo |
+| Empleado | Agregar, consultar y atender tareas | Panel principal |
 
 ---
 
@@ -97,36 +138,61 @@ Además, los departamentos de Administración y Marketing enfrentaban dificultad
   <img src="assets/img/diagrama.png" alt="Foto Evidencia" width="950" height="950">
 </p>
 
+---
 
 ### 🧩 Componentes del Sistema
 
 - **Capa de Presentación (View / UI)**  
-  - 📂 `view/` → Contiene las interfaces gráficas para la interacción del usuario.  
-  - 🖥️ `interfaz.java` → Clase principal de interfaz para mostrar y capturar información.  
+- 📂 view/ → Contiene las clases de interfaz gráfica del sistema.
 
-- **Capa de Control (Controller)**  
-  - 📂 `controller/` → Coordina la lógica entre modelo, servicio y vista.  
-  - ⚙️ Clases que gestionan las operaciones del sistema desde la UI.  
+- 🖥️ TaskManagerUI.java → Clase principal de la interfaz de usuario:
+
+Muestra tres paneles para gestionar tareas urgentes (pila), tareas regulares (cola) y tareas por departamento (lista).
+
+Permite agregar, atender, eliminar y refrescar tareas desde la interfaz.
+
+Incluye un panel general para visualizar todas las tareas del sistema.
+
+- 🚀 Interfaz.java → Clase auxiliar que puede servir como punto inicial o puente de la UI (si aplica en tu proyecto).
+
+-📍 main.java → Punto de entrada alternativo al sistema, que permite inicializar la interfaz gráfica directamente desde ejecución.
+
+- **Capa de Control (Controller)**
+- 📂 `controller/` → Coordina la lógica entre modelo, servicio y vista.  
+-⚙️ TaskController.java → Clase principal del controlador:
+
+ Gestiona la creación de tareas enviando los datos a TaskService.
+
+Permite listar todas las tareas o por tipo (pila, cola, lista).
+
+Controla la eliminación o atención de tareas desde la interfaz.
+
+Actúa como intermediario entre la UI (TaskManagerUI) y la lógica del servicio (TaskService).
 
 - **Capa de Lógica de Negocio (Service)**  
-  - 📂 `service/` → Implementa la lógica del negocio (manejo de triage/tareas, clasificación, validaciones).  
-  - 📝 `GestorTareasMain.java` → Punto de ejecución del sistema que conecta las funciones de servicio con los controladores.  
+  - 📂 `service/` → Implementa la lógica del negocio (manejo de triage/tareas, clasificación, validaciones).
+  - ⚙️ TaskService.java → Clase principal que gestiona las tareas
+  -⚙️ TaskService.class → Incluye métodos más completos como editTask, toggleCompleteTask y deleteTask con validaciones y confirmaciones.
 
 - **Capa de Acceso a Datos (DAO)**  
   - 📂 `dao/` → Se encarga de la conexión con la base de datos y operaciones CRUD.  
-  - 🔗 `DBConnection.java` (o similar) → Clase para gestionar la conexión.  
+  - 🔗 `DBConnection.java` (o similar) → Clase para gestionar la conexión.
+  - ⚙️ TaskDAO.java → Clase principal para las operaciones sobre la tabla tareas
 
 - **Capa de Modelo (Model)**  
-  - 📂 `model/` → Clases que representan las entidades principales.  
-  - 👤 Ejemplo: `Paciente.java`, `RegistroAtencion.java`, `NivelTriage.java`.  
-
+  - 📂 `model/` → Clases que representan las entidades principales.
+  - 👤 Task.java → Representa una tarea en el sistema.
+  - 📝 TaskList.java → Representa una lista de tareas sin orden de prioridad.
+  -🚦 TaskQueue.java → Representa una cola de tareas (FIFO – First In, First Out), ideal para tareas regulares.
+  -🔴 TaskStack.java → Representa una pila de tareas (LIFO – Last In, First Out), ideal para tareas urgentes.
+ 
 - **Capa de Utilidades (Util)**  
   - 📂 `util/` → Herramientas y clases auxiliares para estructuras de datos personalizadas.  
-  - 📌 `cola.java`, `pilas.java`, `listas.java` → Implementaciones de estructuras de datos.  
+  - 📌 `cola.java`, `pilas.java`, `listas.java` → Implementaciones de estructuras de datos.
+  - 🧪 DBTest.java → Validar que la aplicación pueda conectarse correctamente a PostgreSQL.
 
 - **Otros Archivos Importantes**  
-  - 🚀 `main.java` → Punto de entrada alternativo al sistema.  
-  - ✅ `TODO.md` → Lista de pendientes y funcionalidades en desarrollo.  
+  - 🚀 `main.java` → Punto de entrada alternativo al sistema.    
   - 📄 `readme.txt` → Notas rápidas o documentación básica.  
   - 📦 `lib/` → Librerías externas necesarias para correr el sistema.  
   - 🗂️ `bin/` → Archivos compilados.  
@@ -142,6 +208,7 @@ Además, los departamentos de Administración y Marketing enfrentaban dificultad
   <img src="assets/img/mvc.jpg" alt="Foto Evidencia" width="800" height="800">
 </p>
 
+---
 
 ## 🎓 Estructuras de Datos Aplicadas
 
@@ -159,77 +226,6 @@ Además, los departamentos de Administración y Marketing enfrentaban dificultad
 - Propósito: Gestionar tareas generales de departamentos  
 - Operaciones: `add`, `remove`, `contains`  
 - Uso: Mantener secuencia de tareas por departamento 
-
----
-
-## 🔍 Análisis del Problema
-
-**Problemática Identificada:**  
-- Difícil priorizar incidencias críticas sobre tareas regulares  
-- Falta de un registro ordenado de tareas por departamento  
-- Necesidad de un sistema rápido, confiable y fácil de usar  
-
-**Requisitos Funcionales:**  
-- Registrar incidencias críticas  
-- Registrar tareas administrativas y de marketing  
-- Registrar tareas por departamento  
-- Consultar próximas tareas  
-- Atender tareas según prioridad  
-
-**Requisitos No Funcionales:**  
-- Estructuras de datos eficientes para alta concurrencia  
-
-
-
----
-
-## 📌 Caso de Estudio: Organización de Tareas en TechNova
-
-La empresa TechNova necesita organizar las tareas internas para no retrasar proyectos ni incidencias críticas. Se aplican **Pilas para incidencias críticas**, **Colas para tareas administrativas/marketing** y **Listas para tareas de departamentos**.
-
-- Las incidencias críticas se mezclaban con tareas regulares, dificultando priorizar lo urgente.  
-- Tareas administrativas y de marketing se procesaban de manera desordenada, generando retrasos en entregas y proyectos.  
-- Cada departamento llevaba su propia lista de tareas sin un registro centralizado, lo que provocaba duplicidad y pérdida de información.  
-
-### ❌ Problemática
-Estos problemas generaban retrasos en la atención de incidencias críticas, confusión en la gestión de tareas y pérdida de productividad en toda la empresa. Por ejemplo:
-
-- Una incidencia crítica de soporte técnico podía permanecer sin atención horas, mientras tareas menos urgentes eran realizadas primero.  
-- Una tarea importante de marketing para un lanzamiento podía quedar retrasada porque se registró en una lista sin prioridad.  
-- Los supervisores tenían dificultad para generar un resumen confiable de todas las tareas pendientes de cada departamento.  
-
-
-### 💡 Solución Propuesta
-Nuestro sistema digital de gestión de tareas implementa **estructuras de datos especializadas** para optimizar el flujo y la atención según prioridad:
-
-- **Pilas (Stack)** → Gestionan **incidencias críticas** de soporte técnico.  
-  - Ejemplo: Si un servidor cae, esta incidencia se agrega al tope de la pila y se atiende inmediatamente, garantizando que los problemas más urgentes sean resueltos primero.  
-- **Colas (Queue)** → Gestionan **tareas administrativas y de marketing**.  
-  - Ejemplo: Una campaña de redes sociales se agrega al final de la cola y se atiende en orden de llegada, asegurando que todas las tareas regulares se procesen de manera justa.  
-- **Listas (LinkedList)** → Gestionan **tareas de departamentos específicos**.  
-  - Ejemplo: Tareas de desarrollo, finanzas o recursos humanos se agregan a la lista correspondiente, permitiendo consultar, eliminar o reordenar tareas según las necesidades de cada equipo.  
-
-
-### 📊 Ejemplo de Flujo
-1. Incidencia crítica llega → Se agrega a la Pila → Urgente 
-2. Tarea administrativa llega → Se agrega a la Cola → Tareas diarias y ocasionales
-3. Tarea de departamento llega → Se agrega a la Lista → Colaborativa
-
-### ✅ Beneficios
-- Organización eficiente de tareas según prioridad  
-- Interfaz amigable y profesional  
-- Facilita seguimiento y gestión interna  
-- Base para futuras mejoras y persistencia de datos  
-
----
-
-
-## 👥 Roles del Sistema
-
-| Rol | Función Principal | Acceso |
-|-----|-----------------|--------|
-| Gerente | Supervisar tareas y cerrar el sistema | Panel completo |
-| Empleado | Agregar, consultar y atender tareas | Panel principal |
 
 ---
 
@@ -283,7 +279,7 @@ Nuestro sistema digital de gestión de tareas implementa **estructuras de datos 
 
 ---
 
-## 📖 Bibliografía (Formato APA)
+## 📖 Bibliografía 
 
 ### 📚 Referencias Académicas
 1. **Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, R. L. (2022).** *Introduction to Algorithms* (4th ed.). MIT Press.  
@@ -303,7 +299,7 @@ Nuestro sistema digital de gestión de tareas implementa **estructuras de datos 
 
 ---
 
-## 🎯 Objetivos de Aprendizaje Alcanzados
+## 🧠Conocimientos adquiridos
 
 ### Conceptos de Estructuras de Datos
 - **Implementación práctica de pilas, colas y listas** para la gestión de tareas internas y incidencias críticas.  
@@ -352,7 +348,10 @@ Nuestro sistema digital de gestión de tareas implementa **estructuras de datos 
   <img src="assets/img/evidencia.jpg" alt="Foto Evidencia" width="300" height="300">
 </p>
 
-## 🔚 Conclusiones y Agradecimientos
+---
+
+## 🔚 Conclusiones 
+Este proyecto ha permitido integrar conocimientos de programación, estructuras de datos, diseño de software y gestión de procesos internos. Además, ha demostrado cómo los conceptos teóricos pueden aplicarse a un escenario práctico, mejorando la organización y eficiencia de tareas dentro de una empresa.
 
 El desarrollo del Sistema de Gestión de Tareas de TechNova ha permitido aplicar de manera práctica los conocimientos adquiridos en estructuras de datos y programación orientada a objetos. Los principales logros incluyen:
 
@@ -362,10 +361,5 @@ El desarrollo del Sistema de Gestión de Tareas de TechNova ha permitido aplicar
 - **Documentación completa y profesional**, incluyendo diagramas UML, explicación de estructuras de datos aplicadas y casos de uso.  
 - **Preparación para futuras mejoras**, como persistencia de datos, reportes automáticos y ampliación de funcionalidades.  
 
-### Impacto Académico y Práctico
-Este proyecto ha permitido integrar conocimientos de programación, estructuras de datos, diseño de software y gestión de procesos internos. Además, ha demostrado cómo los conceptos teóricos pueden aplicarse a un escenario práctico, mejorando la organización y eficiencia de tareas dentro de una empresa.
 
-### Agradecimientos
-- A **la profesora Blanca Aracely Aranda Machorro**, por su guía y apoyo en el desarrollo académico del proyecto.  
-- A **compañeros y colaboradores**, por la revisión, sugerencias y apoyo durante la implementación del sistema.  
-- A **la Universidad TecMilenio**, por proporcionar el entorno académico y los recursos tecnológicos necesarios.  
+ 
