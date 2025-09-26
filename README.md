@@ -69,11 +69,11 @@ Esta situación generaba confusión, pérdida de productividad y retrasos en la 
 ---
 
 ### 📩 Solicitudes del cliente para el programa
-✅Queremos un sistema donde se junten todas las tareas de la empresa en un solo lugar, para poder organizarlas mejor y darles seguimiento sin perder nada.
-✅ Que las tareas no se borren cuando cerremos el sistema, sino que se guarden y podamos verlas después.
-✅ Que tenga una ventana o aplicación sencilla donde podamos usar el sistema de forma más cómoda y visual.
-⏳ Que nos avise o recuerde cuando haya tareas urgentes para que no se nos pase nada importante.
-⏳ Que podamos asignar tareas a diferentes personas o equipos, para que cada quien sepa qué le toca hacer.
+-✅Queremos un sistema donde se junten todas las tareas de la empresa en un solo lugar, para poder organizarlas mejor y darles seguimiento sin perder nada.
+-✅ Que las tareas no se borren cuando cerremos el sistema, sino que se guarden y podamos verlas después.
+-✅ Que tenga una ventana o aplicación sencilla donde podamos usar el sistema de forma más cómoda y visual.
+-⏳ Que nos avise o recuerde cuando haya tareas urgentes para que no se nos pase nada importante.
+-⏳ Que podamos asignar tareas a diferentes personas o equipos, para que cada quien sepa qué le toca hacer.
 
 ---
 
