@@ -69,11 +69,11 @@ Esta situación generaba confusión, pérdida de productividad y retrasos en la 
 ---
 
 ### 📩 Solicitudes del cliente para el programa
-- ✅(COMPLETADO) - Programa principal: Implementar un sistema integral de gestión de tareas que centralice la información de todos los departamentos y permita priorización y seguimiento eficiente.  
-- ✅(COMPLETADO) - Persistencia de Datos: Implementar un sistema de almacenamiento para guardar las tareas y que no se pierdan al cerrar el programa.  
-- ✅(COMPLETADO) - Interfaz Gráfica (GUI): Desarrollar una interfaz gráfica para mejorar la experiencia del usuario, permitiendo una mejor interacción.  
-- ⏳(EN PROCESO) - Notificaciones y Recordatorios: Añadir la funcionalidad de notificaciones o recordatorios para tareas urgentes.  
-- ✅(COMPLETADO) - Mejorar la Gestión de Usuarios: Agregar un sistema para asignar tareas a diferentes usuarios o equipos dentro de los departamentos.
+✅Queremos un sistema donde se junten todas las tareas de la empresa en un solo lugar, para poder organizarlas mejor y darles seguimiento sin perder nada.
+✅ Que las tareas no se borren cuando cerremos el sistema, sino que se guarden y podamos verlas después.
+✅ Que tenga una ventana o aplicación sencilla donde podamos usar el sistema de forma más cómoda y visual.
+⏳ Que nos avise o recuerde cuando haya tareas urgentes para que no se nos pase nada importante.
+⏳ Que podamos asignar tareas a diferentes personas o equipos, para que cada quien sepa qué le toca hacer.
 
 ---
 
