@@ -22,7 +22,7 @@ Proyecto académico para la materia de **Estructuras de Datos** - Sistema de ges
 
 ## 📑 ÍNDICE DE CONTENIDO
 
-1. [Descripcion del caso](#descripcion-del-caso)
+1. [Descripción del caso](#descripcion-del-caso)
 2. [Solicitudes del cliente para el programa](#solicitudes-del-cliente-para-el-programa)
 3. [Solucion propuesta](#solucion-propuesta)
 4. [Alcance del programa](#alcance-del-programa)
@@ -41,7 +41,7 @@ Proyecto académico para la materia de **Estructuras de Datos** - Sistema de ges
 
 ---
 
-## 🔍📝Descripcion del caso
+## 🔍📝Descripción del caso
 ### Estudio de caso
 En TechNova, el equipo de Soporte Técnico detectó que la gestión de tareas presentaba problemas de eficiencia durante los turnos. Mientras algunos técnicos atendían tickets urgentes de clientes con incidencias críticas, otras solicitudes importantes quedaban sin atención o se realizaban en desorden. Por ejemplo, un cliente podía reportar que su servidor estaba caído, mientras que varias solicitudes de mantenimiento menos urgentes también requerían seguimiento.  
 
@@ -74,7 +74,7 @@ Esta situación generaba confusión, pérdida de productividad y retrasos en la 
 
 ---
 
-  ## 💡 Solucion Propuesta
+  ## 💡Solución Propuesta
 | Solución | Descripción | Estado |
 |----------|-------------|--------|
 | 🟢🔴🔵 **Clasificación por colores y triage** | Cada tarea se etiqueta según su nivel de urgencia: Rojo → Urgente / crítica; Verde → Importante / colaborativa; Azul → Regular / ocasional | ✅ Aceptada |
@@ -84,7 +84,7 @@ Esta situación generaba confusión, pérdida de productividad y retrasos en la 
 
 ---
 
-## 📈 Alcance del programa
+## 📈Alcance del programa
 **Funciones:**
 - Registro y clasificación de tareas.
 - Asignación de tareas a usuarios y departamentos.
@@ -97,7 +97,7 @@ Esta situación generaba confusión, pérdida de productividad y retrasos en la 
 - Notificaciones externas  
 
 ---
-## 👥 Roles del Sistema
+## 👥Roles del Sistema
 
 | Rol | Función Principal | Acceso |
 |-----|-----------------|--------|
@@ -106,7 +106,7 @@ Esta situación generaba confusión, pérdida de productividad y retrasos en la 
 
 ---
 
-## 📊 Sistema de clasificación de Tareas por Prioridad
+## 📊Sistema de clasificación de Tareas por Prioridad
 
 | Color | Tipo de tarea | Descripción | Tiempos Requeridos
 |-------|-------|-------------|--------------------------|
@@ -116,7 +116,7 @@ Esta situación generaba confusión, pérdida de productividad y retrasos en la 
 
 ---
 
-## 🛠️ Tecnologías usadas en el proyecto
+## 🛠️Tecnologías usadas en el proyecto
 
 - **Java 17+** - Lenguaje principal de desarrollo  
 - **Swing** - Interfaz gráfica  
@@ -125,7 +125,7 @@ Esta situación generaba confusión, pérdida de productividad y retrasos en la 
 
 ---
 
-## 📂 Arquitectura del Sistema
+## 📂Arquitectura del Sistema
 
 
 ### Estructura de Capas (MVC)
@@ -135,7 +135,7 @@ Esta situación generaba confusión, pérdida de productividad y retrasos en la 
 
 ---
 
-### 🧩 Componentes del Sistema
+### 🧩Componentes del Sistema
 
 - **Capa de Presentación (View / UI)**  
 - 📂 view/ → Contiene las clases de interfaz gráfica del sistema.
@@ -194,7 +194,7 @@ Actúa como intermediario entre la UI (TaskManagerUI) y la lógica del servicio 
 
 ---
 
-## 📊 Diseño UML
+## 📊Diseño UML
 
 ### Diagrama de Clases
 
@@ -206,7 +206,7 @@ Actúa como intermediario entre la UI (TaskManagerUI) y la lógica del servicio 
 ---
 
 
-## 📈 Avance del Proyecto
+## 📈Avance del Proyecto
 
 **✅ Completado:**  
 - Análisis de requisitos  
@@ -227,7 +227,7 @@ Actúa como intermediario entre la UI (TaskManagerUI) y la lógica del servicio 
 
 ---
 
-## 📚 Glosario de Términos
+## 📚Glosario de Términos
 
 ### Términos de Gestión de Tareas
 - **Incidencia Crítica**: Problema o fallo que requiere atención inmediata, gestionado mediante una **pila (Stack)** para garantizar prioridad máxima.  
@@ -256,7 +256,7 @@ Actúa como intermediario entre la UI (TaskManagerUI) y la lógica del servicio 
 
 ---
 
-## 📖 Bibliografía 
+## 📖Bibliografía 
 
 ### 📚 Referencias Académicas
 1. **Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, R. L. (2022).** *Introduction to Algorithms* (4th ed.). MIT Press.  
@@ -292,7 +292,7 @@ Actúa como intermediario entre la UI (TaskManagerUI) y la lógica del servicio 
 - **Trabajo en equipo y coordinación** al gestionar múltiples tipos de tareas y usuarios en el sistema.  
 - **Comunicación técnica efectiva**, explicando flujos de tareas, estructuras utilizadas y resultados a compañeros o evaluadores.  
 
-## 👨‍💻 Desarrolladores  
+## 👨‍💻Desarrolladores  
 
 <table>
   <tr>
@@ -317,7 +317,7 @@ Actúa como intermediario entre la UI (TaskManagerUI) y la lógica del servicio 
   </tr>
 </table>
 
-## 🔚 Conclusiones 
+## 🔚Conclusiones 
 Este proyecto ha permitido integrar conocimientos de programación, estructuras de datos, diseño de software y gestión de procesos internos. Además, ha demostrado cómo los conceptos teóricos pueden aplicarse a un escenario práctico, mejorando la organización y eficiencia de tareas dentro de una empresa.
 
 El desarrollo del Sistema de Gestión de Tareas de TechNova nos ha permitido aplicar de manera práctica los conocimientos adquiridos en estructuras de datos y programación orientada a objetos. Los principales logros incluyen:
