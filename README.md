@@ -22,18 +22,7 @@ Proyecto académico para la materia de **Estructuras de Datos** - Sistema de ges
 
 ## 📑 ÍNDICE DE CONTENIDO
 
-1. [Descripción del Caso](#descripcion-del-caso)
-2. [Solicitudes del Cliente para el Programa](#solicitudes-del-cliente-para-el-programa)
-3. [Solución Propuesta](#solucion-propuesta)
-4. [Alcance del Programa](#alcance-del-programa)
-5. [Roles del Sistema](#roles-del-sistema)
-6. [Sistema de Clasificación de Tareas por Prioridad](#sistema-de-clasificacion-de-tareas-por-prioridad)
-7. [Tecnologías Usadas en el Proyecto](#tecnologias-usadas-en-el-proyecto)
-8. [Arquitectura del Sistema](#arquitectura-del-sistema)
-9. [Componentes del Sistema](#componentes-del-sistema)
-## 📑 Índice de contenido
-
-1. [Descripción del caso](#descripcion-del-caso)
+1. [Descripcion del caso](#descripcion-del-caso)
 2. [Solicitudes del cliente para el programa](#solicitudes-del-cliente-para-el-programa)
 3. [Solución propuesta](#solucion-propuesta)
 4. [Alcance del programa](#alcance-del-programa)
@@ -43,20 +32,16 @@ Proyecto académico para la materia de **Estructuras de Datos** - Sistema de ges
 8. [Arquitectura del sistema](#arquitectura-del-sistema)
 9. [Componentes del sistema](#componentes-del-sistema)
 10. [Diseño UML](#diseno-uml)
-11. [Avance del Proyecto](#avance-del-proyecto)
-12. [Glosario de Términos](#glosario-de-terminos)
 11. [Avance del proyecto](#avance-del-proyecto)
 12. [Glosario de términos](#glosario-de-terminos)
 13. [Bibliografía](#bibliografia)
-14. [Conocimientos Adquiridos](#conocimientos-adquiridos)
 14. [Conocimientos adquiridos](#conocimientos-adquiridos)
 15. [Desarrolladores](#desarrolladores)
 16. [Conclusiones](#conclusiones)
 
 ---
 
-## 🔍📝 Descripción del Caso
-
+## 🔍📝Descripcion del caso
 ### Estudio de caso
 En TechNova, el equipo de Soporte Técnico detectó que la gestión de tareas presentaba problemas de eficiencia durante los turnos. Mientras algunos técnicos atendían tickets urgentes de clientes con incidencias críticas, otras solicitudes importantes quedaban sin atención o se realizaban en desorden. Por ejemplo, un cliente podía reportar que su servidor estaba caído, mientras que varias solicitudes de mantenimiento menos urgentes también requerían seguimiento.  
 
@@ -80,7 +65,7 @@ Esta situación generaba confusión, pérdida de productividad y retrasos en la 
 
 ---
 
-### 📩 Solicitudes del cliente para el programa
+## 📩 Solicitudes del cliente para el programa
 - ✅Queremos un sistema donde se junten todas las tareas de la empresa en un solo lugar, para poder organizarlas mejor y darles seguimiento sin perder nada.
 - ✅ Que las tareas no se borren cuando cerremos el sistema, sino que se guarden y podamos verlas después.
 - ✅ Que tenga una ventana o aplicación sencilla donde podamos usar el sistema de forma más cómoda y visual.
@@ -89,7 +74,7 @@ Esta situación generaba confusión, pérdida de productividad y retrasos en la 
 
 ---
 
-  ### 💡 Solución Propuesta
+  ## 💡 Solución Propuesta
 | Solución | Descripción | Estado |
 |----------|-------------|--------|
 | 🟢🔴🔵 **Clasificación por colores y triage** | Cada tarea se etiqueta según su nivel de urgencia: Rojo → Urgente / crítica; Verde → Importante / colaborativa; Azul → Regular / ocasional | ✅ Aceptada |
@@ -99,7 +84,7 @@ Esta situación generaba confusión, pérdida de productividad y retrasos en la 
 
 ---
 
-### 📈 Alcance del programa
+## 📈 Alcance del programa
 **Funciones:**
 - Registro y clasificación de tareas.
 - Asignación de tareas a usuarios y departamentos.
@@ -288,38 +273,26 @@ Actúa como intermediario entre la UI (TaskManagerUI) y la lógica del servicio 
 
 2. **Fowler, M. (2018).** *Patterns of Enterprise Application Architecture* (2nd ed.). Addison-Wesley Professional.  
    _Consultado para aplicar patrones de diseño como MVC en la organización del proyecto._
-# Descripción del caso
-
----
-## Solicitudes del cliente para el programa
 
 ## 🧠Conocimientos adquiridos
-## Solución propuesta
 
 ### Conceptos de Estructuras de Datos
 - **Implementación práctica de pilas, colas y listas** para la gestión de tareas internas y incidencias críticas.  
 - **Análisis de complejidad temporal y espacial** de operaciones en Stack, Queue y LinkedList, evaluando eficiencia en escenarios de alta concurrencia de tareas.  
 - **Diseño de estructuras de datos eficientes** adaptadas a distintos tipos de tareas: urgentes (Stack), regulares (Queue) y departamentales (LinkedList).  
 - **Optimización del rendimiento** mediante selección de la estructura de datos correcta para cada tipo de tarea y flujo de trabajo.  
-## Alcance del programa
 
 ### Habilidades de Ingeniería de Software
 - **Aplicación de patrones de diseño** básicos y buenas prácticas para mantener el código organizado y modular.  
 - **Documentación técnica clara y profesional**, incluyendo diagramas UML y explicación de estructuras y flujo de tareas.  
 - **Metodología de desarrollo estructurada**, planificando fases de análisis, diseño, implementación y pruebas de manera ordenada.  
-## Roles del sistema
 
 ### Competencias Interdisciplinarias
 - **Comprensión del dominio de gestión de proyectos internos**, adaptando conceptos de priorización a escenarios de trabajo real.  
 - **Trabajo en equipo y coordinación** al gestionar múltiples tipos de tareas y usuarios en el sistema.  
 - **Comunicación técnica efectiva**, explicando flujos de tareas, estructuras utilizadas y resultados a compañeros o evaluadores.  
-## Sistema de clasificación de tareas por prioridad
-
----
-## Tecnologías usadas en el proyecto
 
 ## 👨‍💻 Desarrolladores  
-## Arquitectura del sistema
 
 <table>
   <tr>
@@ -343,31 +316,14 @@ Actúa como intermediario entre la UI (TaskManagerUI) y la lógica del servicio 
     <td align="center"><b>Gael Marroquín</b></td>
   </tr>
 </table>
-## Componentes del sistema
-
-<p align="center">
-  <img src="assets/img/evidencia.jpg" alt="Foto Evidencia" width="300" height="300">
-</p>
-## Diseño UML
-
----
-## Avance del proyecto
 
 ## 🔚 Conclusiones 
 Este proyecto ha permitido integrar conocimientos de programación, estructuras de datos, diseño de software y gestión de procesos internos. Además, ha demostrado cómo los conceptos teóricos pueden aplicarse a un escenario práctico, mejorando la organización y eficiencia de tareas dentro de una empresa.
-## Glosario de términos
 
-El desarrollo del Sistema de Gestión de Tareas de TechNova ha permitido aplicar de manera práctica los conocimientos adquiridos en estructuras de datos y programación orientada a objetos. Los principales logros incluyen:
-## Bibliografía
+El desarrollo del Sistema de Gestión de Tareas de TechNova nos ha permitido aplicar de manera práctica los conocimientos adquiridos en estructuras de datos y programación orientada a objetos. Los principales logros incluyen:
 
 - **Implementación efectiva de pilas, colas y listas**, adaptadas a distintos tipos de tareas: urgentes, administrativas y departamentales.  
 - **Optimización del flujo de trabajo**, priorizando incidencias críticas y garantizando que las tareas regulares se procesen en orden de llegada.  
 - **Desarrollo de una interfaz gráfica intuitiva**, que permite a los usuarios interactuar con el sistema de forma eficiente y sencilla.  
 - **Documentación completa y profesional**, incluyendo diagramas UML, explicación de estructuras de datos aplicadas y casos de uso.  
 - **Preparación para futuras mejoras**, como persistencia de datos, reportes automáticos y ampliación de funcionalidades.  
-## Conocimientos adquiridos
-
-## Desarrolladores
-
- 
-## Conclusiones
