@@ -129,9 +129,8 @@ Esta situación generaba confusión, pérdida de productividad y retrasos en la 
 
 ### Diagrama de flujo
 
-
 <p align="center">
-  <img src="assets/img/flujo.jpeg" alt="Foto Evidencia" width="800" height="800">
+  <img src="assets/img/flujo.jpeg" alt="Foto Evidencia" width="1100" height="1100">
 </p>
 
 ---
