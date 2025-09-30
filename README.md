@@ -127,10 +127,18 @@ Esta situación generaba confusión, pérdida de productividad y retrasos en la 
 
 ## 📂Arquitectura del Sistema
 
+### Diagrama de flujo
+
+
+<p align="center">
+  <img src="assets/img/flujo.jpeg" alt="Foto Evidencia" width="800" height="800">
+</p>
+
+---
 
 ### Estructura de Capas (MVC)
 <p align="center">
-  <img src="assets/img/diagrama.png" alt="Foto Evidencia" width="950" height="950">
+  <img src="assets/img/diagrama.jpeg" alt="Foto Evidencia" width="950" height="950">
 </p>
 
 ---
@@ -200,7 +208,7 @@ Actúa como intermediario entre la UI (TaskManagerUI) y la lógica del servicio 
 
 
 <p align="center">
-  <img src="assets/img/mvc.jpg" alt="Foto Evidencia" width="800" height="800">
+  <img src="assets/img/mvc.jpeg" alt="Foto Evidencia" width="800" height="800">
 </p>
 
 ---
