@@ -22,7 +22,7 @@ Proyecto académico para la materia de **Estructuras de Datos** - Sistema de ges
 
 ## 📑 ÍNDICE DE CONTENIDO
 
-1. [Descripción del caso](#descripcion-del-caso)
+1. [Descripción del caso](#descripción-del-caso)
 2. [Solicitudes del cliente para el programa](#solicitudes-del-cliente-para-el-programa)
 3. [Solución propuesta](#solucion-propuesta)
 4. [Alcance del programa](#alcance-del-programa)
