@@ -321,6 +321,7 @@ Actúa como intermediario entre la UI (TaskManagerUI) y la lógica del servicio 
 
 ---
 
+
 ## 🔚Conclusiones 
 Este proyecto ha permitido integrar conocimientos de programación, estructuras de datos, diseño de software y gestión de procesos internos. Además, ha demostrado cómo los conceptos teóricos pueden aplicarse a un escenario práctico, mejorando la organización y eficiencia de tareas dentro de una empresa.
 
