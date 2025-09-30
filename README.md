@@ -31,10 +31,10 @@ Proyecto académico para la materia de **Estructuras de Datos** - Sistema de ges
 7. [Tecnologías usadas en el proyecto](#tecnologías-usadas-en-el-proyecto)
 8. [Arquitectura del sistema](#arquitectura-del-sistema)
 9. [Componentes del sistema](#componentes-del-sistema)
-10. [Diseño UML](#diseno-uml)
+10. [Diseño UML](#diseño-uml)
 11. [Avance del proyecto](#avance-del-proyecto)
-12. [Glosario de términos](#glosario-de-terminos)
-13. [Bibliografía](#bibliografia)
+12. [Glosario de términos](#glosario-de-términos)
+13. [Bibliografía](#bibliografía)
 14. [Conocimientos adquiridos](#conocimientos-adquiridos)
 15. [Desarrolladores](#desarrolladores)
 16. [Conclusiones](#conclusiones)
@@ -135,7 +135,7 @@ Esta situación generaba confusión, pérdida de productividad y retrasos en la 
 
 ---
 
-### 🧩Componentes del Sistema
+## 🧩Componentes del Sistema
 
 - **Capa de Presentación (View / UI)**  
 - 📂 view/ → Contiene las clases de interfaz gráfica del sistema.
@@ -148,7 +148,7 @@ Permite agregar, atender, eliminar y refrescar tareas desde la interfaz.
 
 Incluye un panel general para visualizar todas las tareas del sistema.
 
-- 🚀 Interfaz.java → Clase auxiliar que puede servir como punto inicial o puente de la UI (si aplica en tu proyecto).
+- 🚀 interfaz.java → Clase auxiliar que puede servir como punto inicial o puente de la UI (si aplica en tu proyecto).
 
 -📍 main.java → Punto de entrada alternativo al sistema, que permite inicializar la interfaz gráfica directamente desde ejecución.
 
@@ -290,7 +290,9 @@ Actúa como intermediario entre la UI (TaskManagerUI) y la lógica del servicio 
 ### Competencias Interdisciplinarias
 - **Comprensión del dominio de gestión de proyectos internos**, adaptando conceptos de priorización a escenarios de trabajo real.  
 - **Trabajo en equipo y coordinación** al gestionar múltiples tipos de tareas y usuarios en el sistema.  
-- **Comunicación técnica efectiva**, explicando flujos de tareas, estructuras utilizadas y resultados a compañeros o evaluadores.  
+- **Comunicación técnica efectiva**, explicando flujos de tareas, estructuras utilizadas y resultados a compañeros o evaluadores.
+
+---
 
 ## 👨‍💻Desarrolladores  
 
@@ -316,6 +318,8 @@ Actúa como intermediario entre la UI (TaskManagerUI) y la lógica del servicio 
     <td align="center"><b>Gael Marroquín</b></td>
   </tr>
 </table>
+
+---
 
 ## 🔚Conclusiones 
 Este proyecto ha permitido integrar conocimientos de programación, estructuras de datos, diseño de software y gestión de procesos internos. Además, ha demostrado cómo los conceptos teóricos pueden aplicarse a un escenario práctico, mejorando la organización y eficiencia de tareas dentro de una empresa.
