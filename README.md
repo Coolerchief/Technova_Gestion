@@ -24,7 +24,7 @@ Proyecto académico para la materia de **Estructuras de Datos** - Sistema de ges
 
 1. [Descripcion del caso](#descripcion-del-caso)
 2. [Solicitudes del cliente para el programa](#solicitudes-del-cliente-para-el-programa)
-3. [Solución propuesta](#solucion-propuesta)
+3. [Solucion propuesta](#solucion-propuesta)
 4. [Alcance del programa](#alcance-del-programa)
 5. [Roles del sistema](#roles-del-sistema)
 6. [Sistema de clasificación de tareas por prioridad](#sistema-de-clasificacion-de-tareas-por-prioridad)
@@ -74,7 +74,7 @@ Esta situación generaba confusión, pérdida de productividad y retrasos en la 
 
 ---
 
-  ## 💡 Solución Propuesta
+  ## 💡 Solucion Propuesta
 | Solución | Descripción | Estado |
 |----------|-------------|--------|
 | 🟢🔴🔵 **Clasificación por colores y triage** | Cada tarea se etiqueta según su nivel de urgencia: Rojo → Urgente / crítica; Verde → Importante / colaborativa; Azul → Regular / ocasional | ✅ Aceptada |
